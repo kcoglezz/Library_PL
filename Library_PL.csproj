@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A67271D9-8604-4639-81F9-B71C487CAC50}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Library_PL</RootNamespace>
+    <AssemblyName>Library_PL</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.TeamSystem.Data.UnitTesting, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Datos\AdminLog.cs" />
+    <Compile Include="Datos\Autor.cs" />
+    <Compile Include="Datos\Buscar.cs" />
+    <Compile Include="Datos\Curso.cs" />
+    <Compile Include="Datos\DatEquipo.cs" />
+    <Compile Include="Datos\ErrorHandler.cs" />
+    <Compile Include="Datos\EstadoCivil.cs" />
+    <Compile Include="Datos\Etiqueta.cs" />
+    <Compile Include="Datos\FuncionesDB.cs" />
+    <Compile Include="Datos\Idioma.cs" />
+    <Compile Include="Datos\LoDestacado.cs" />
+    <Compile Include="Datos\LoPopular.cs" />
+    <Compile Include="Datos\LoUltimo.cs" />
+    <Compile Include="Datos\Menu.cs" />
+    <Compile Include="Datos\Pagina.cs" />
+    <Compile Include="Datos\Pais.cs" />
+    <Compile Include="Datos\Pregunta.cs" />
+    <Compile Include="Datos\Recurso.cs" />
+    <Compile Include="Datos\Respuesta.cs" />
+    <Compile Include="Datos\Seccion.cs" />
+    <Compile Include="Datos\Sexo.cs" />
+    <Compile Include="Datos\TipoTrabajo.cs" />
+    <Compile Include="Datos\Usuario.cs" />
+    <Compile Include="Datos\UsuarioEMail.cs" />
+    <Compile Include="Datos\Votar.cs" />
+    <Compile Include="Entidad\InfoAdminEmails.cs" />
+    <Compile Include="Entidad\InfoArticuloListado.cs" />
+    <Compile Include="Entidad\InfoAutor.cs" />
+    <Compile Include="Entidad\InfoBuscar.cs" />
+    <Compile Include="Entidad\InfoColaboracion.cs" />
+    <Compile Include="Entidad\InfoConexion.cs" />
+    <Compile Include="Entidad\InfoCurso.cs" />
+    <Compile Include="Entidad\InfoDescarga.cs" />
+    <Compile Include="Entidad\InfoEmail.cs" />
+    <Compile Include="Entidad\InfoEMailServer.cs" />
+    <Compile Include="Entidad\InfoEnvioMail.cs" />
+    <Compile Include="Entidad\InfoEquipo.cs" />
+    <Compile Include="Entidad\InfoEquipoRecurso.cs" />
+    <Compile Include="Entidad\InfoEquipoRecursoComentario.cs" />
+    <Compile Include="Entidad\InfoEquipoRecursoCompartido.cs" />
+    <Compile Include="Entidad\InfoEquipoUsuario.cs" />
+    <Compile Include="Entidad\InfoEstadoCivil.cs" />
+    <Compile Include="Entidad\InfoEtiqueta.cs" />
+    <Compile Include="Entidad\InfoIdioma.cs" />
+    <Compile Include="Entidad\InfoInvitacionEquipo.cs" />
+    <Compile Include="Entidad\InfoLibretaUsuarioEquipo.cs" />
+    <Compile Include="Entidad\InfoLoDelAutor.cs" />
+    <Compile Include="Entidad\InfoLoDestacado.cs" />
+    <Compile Include="Entidad\InfoLog.cs" />
+    <Compile Include="Entidad\InfoLoPopular.cs" />
+    <Compile Include="Entidad\InfoLoUltimo.cs" />
+    <Compile Include="Entidad\InfoMenu.cs" />
+    <Compile Include="Entidad\InfoPagina.cs" />
+    <Compile Include="Entidad\InfoPaginaDescarga.cs" />
+    <Compile Include="Entidad\InfoPaginaEquipo.cs" />
+    <Compile Include="Entidad\InfoPaginasdelaSeccion.cs" />
+    <Compile Include="Entidad\InfoPais.cs" />
+    <Compile Include="Entidad\InfoPregunta.cs" />
+    <Compile Include="Entidad\InfoPublicacionesDelAutor.cs" />
+    <Compile Include="Entidad\InfoRecurso.cs" />
+    <Compile Include="Entidad\InfoResenaComentarios.cs" />
+    <Compile Include="Entidad\InfoRespuesta.cs" />
+    <Compile Include="Entidad\InfoResultadoEncuesta.cs" />
+    <Compile Include="Entidad\InfoSeccion.cs" />
+    <Compile Include="Entidad\InfoSeccionHijos.cs" />
+    <Compile Include="Entidad\InfoSeccionPadre.cs" />
+    <Compile Include="Entidad\InfoSexo.cs" />
+    <Compile Include="Entidad\InfoSubSeccion.cs" />
+    <Compile Include="Entidad\InfoTimeLineEquipo.cs" />
+    <Compile Include="Entidad\InfoTipoTrabajo.cs" />
+    <Compile Include="Entidad\InfoUsuario.cs" />
+    <Compile Include="Entidad\InfoUsuarioEquipo.cs" />
+    <Compile Include="Entidad\InfoUsuarioIP.cs" />
+    <Compile Include="Entidad\InfoVotar.cs" />
+    <Compile Include="Enums\Info.cs" />
+    <Compile Include="Filtros\FiltroPage.cs" />
+    <Compile Include="Filtros\FiltroPagina.cs" />
+    <Compile Include="Filtros\FiltroPregunta.cs" />
+    <Compile Include="Filtros\InfoFiltroPagina.cs" />
+    <Compile Include="Funcion\Funcion.cs" />
+    <Compile Include="Negocio\AdminLog.cs" />
+    <Compile Include="Negocio\Autor.cs" />
+    <Compile Include="Negocio\EMail.cs" />
+    <Compile Include="Negocio\Etiqueta.cs" />
+    <Compile Include="Negocio\LoDelAutor.cs" />
+    <Compile Include="Negocio\LoDestacado.cs" />
+    <Compile Include="Negocio\LoPopular.cs" />
+    <Compile Include="Negocio\LoUltimo.cs" />
+    <Compile Include="Negocio\MenuPL.cs" />
+    <Compile Include="Negocio\NegBuscar.cs" />
+    <Compile Include="Negocio\NegCurso.cs" />
+    <Compile Include="Negocio\NegEquipo.cs" />
+    <Compile Include="Negocio\NegEstadoCivil.cs" />
+    <Compile Include="Negocio\NegIdioma.cs" />
+    <Compile Include="Negocio\NegRecurso.cs" />
+    <Compile Include="Negocio\NegSeccion.cs" />
+    <Compile Include="Negocio\NegSexo.cs" />
+    <Compile Include="Negocio\NegTipoTrabajo.cs" />
+    <Compile Include="Negocio\Pagina.cs" />
+    <Compile Include="Negocio\Pais.cs" />
+    <Compile Include="Negocio\Pregunta.cs" />
+    <Compile Include="Negocio\Respuesta.cs" />
+    <Compile Include="Negocio\Usuario.cs" />
+    <Compile Include="Negocio\UsuarioEMail..cs" />
+    <Compile Include="Negocio\Votar.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Qs\ClQueryString.cs" />
+    <Compile Include="Qs\Rijndael.cs" />
+    <Compile Include="Util\Html.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

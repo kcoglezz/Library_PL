@@ -1,0 +1,20 @@
+E:\PL\ProyectosV2008\Modo Proyectos\PLWeb4_7\Library_PL\Library_PL\Library_PL\bin\Release\Library_PL.dll
+E:\PL\ProyectosV2008\Modo Proyectos\PLWeb4_7\Library_PL\Library_PL\Library_PL\bin\Release\Library_PL.pdb
+E:\PL\ProyectosV2008\Modo Proyectos\PLWeb4_7\Library_PL\Library_PL\Library_PL\obj\Release\ResolveAssemblyReference.cache
+E:\PL\ProyectosV2008\Modo Proyectos\PLWeb4_7\Library_PL\Library_PL\Library_PL\obj\Release\Library_PL.dll
+E:\PL\ProyectosV2008\Modo Proyectos\PLWeb4_7\Library_PL\Library_PL\Library_PL\obj\Release\Library_PL.pdb
+C:\PL\ProyectosV2008\Modo Proyectos\PLWeb4_7\Library_PL\Library_PL\Library_PL\bin\Release\Library_PL.dll
+C:\PL\ProyectosV2008\Modo Proyectos\PLWeb4_7\Library_PL\Library_PL\Library_PL\bin\Release\Library_PL.pdb
+C:\PL\ProyectosV2008\Modo Proyectos\PLWeb4_7\Library_PL\Library_PL\Library_PL\obj\Release\ResolveAssemblyReference.cache
+C:\PL\ProyectosV2008\Modo Proyectos\PLWeb4_7\Library_PL\Library_PL\Library_PL\obj\Release\Library_PL.dll
+C:\PL\ProyectosV2008\Modo Proyectos\PLWeb4_7\Library_PL\Library_PL\Library_PL\obj\Release\Library_PL.pdb
+C:\PL\ProyectoV2013\Library_PL\Library_PL\bin\Release\Library_PL.dll
+C:\PL\ProyectoV2013\Library_PL\Library_PL\bin\Release\Library_PL.pdb
+C:\PL\ProyectoV2013\Library_PL\Library_PL\obj\Release\Library_PL.csprojResolveAssemblyReference.cache
+C:\PL\ProyectoV2013\Library_PL\Library_PL\obj\Release\Library_PL.dll
+C:\PL\ProyectoV2013\Library_PL\Library_PL\obj\Release\Library_PL.pdb
+C:\PL\Proyecto_VS_2008\PL\Library_PL\Library_PL\bin\Release\Library_PL.dll
+C:\PL\Proyecto_VS_2008\PL\Library_PL\Library_PL\bin\Release\Library_PL.pdb
+C:\PL\Proyecto_VS_2008\PL\Library_PL\Library_PL\obj\Release\ResolveAssemblyReference.cache
+C:\PL\Proyecto_VS_2008\PL\Library_PL\Library_PL\obj\Release\Library_PL.dll
+C:\PL\Proyecto_VS_2008\PL\Library_PL\Library_PL\obj\Release\Library_PL.pdb

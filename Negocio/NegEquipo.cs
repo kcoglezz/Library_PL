@@ -168,6 +168,16 @@ namespace Sistema.PL.Negocio
         {
             return Sistema.PL.Datos.DatEquipo.Elimina_Usuario_del_Equipo(idUsuarioADM,IdUsuario,IdEquipo);
         }
+
+        public static List<InfoEquipoRecursoProposito> Listar_Conversaciones(int Id_usuario)
+        {
+            return Sistema.PL.Datos.DatEquipo.Listar_Conversaciones(Id_usuario);
+        }
+
+        public static string Archivar_Conversacion(int IdUsuario, int IdEquipoRecurso)
+        {
+            return Sistema.PL.Datos.DatEquipo.Archivar_Conversacion(IdUsuario, IdEquipoRecurso);
+        }
     }
 
    

@@ -71,7 +71,7 @@ namespace Sistema.PL.Datos
             return intId;
         }
 
-
+      
 
         public static int RegistrarEquipoUsuario(InfoEquipoUsuario oEquipoUsuario)
         {
@@ -783,6 +783,76 @@ namespace Sistema.PL.Datos
 
             return result;
         }
+
+        public static List<InfoEquipoRecursoProposito> Listar_Conversaciones(int Id_usuario)
+        {
+            System.Data.SqlClient.SqlDataReader reader = null;
+            string strProcedure = "PA_LISTAR_CONVERSACIONES ";
+            List<InfoEquipoRecursoProposito> oListado = new List<InfoEquipoRecursoProposito>();
+            try
+            {
+                reader = FuncionesDB.GetRecords(strProcedure + Id_usuario);
+
+                while (reader.Read())
+                {
+
+                    InfoEquipoRecursoProposito Resultado = new InfoEquipoRecursoProposito();
+                    Resultado.ID_EQUIPO_RECURSO = Convert.ToInt32(reader["ID_EQUIPO_RECURSO"]);
+                    Resultado.ID_EQUIPO = Convert.ToInt32(reader["ID_EQUIPO"]);
+                    Resultado.NOMBRE_EQUIPO = Convert.ToString(reader["NOMBRE_EQUIPO"]);
+                    Resultado.PAGE_ID = Convert.ToInt32(reader["PAGE_ID"]);
+                    Resultado.NOMBRE_RECURSO = Convert.ToString(reader["RECURSO"]);
+                    Resultado.ID_USUARIO_QUE_COMPARTIO = Convert.ToInt32(reader["ID_USUARIO_QUE_COMPARTIO"]);
+                    Resultado.RESENA_COMENTARIO = Convert.ToString(reader["RESENA_COMENTARIO"]);
+                    Resultado.FECHA_APORTE = Convert.ToString(reader["FECHA_DE_APORTE"]);
+                    Resultado.ES_ADMINISTRADOR = Convert.ToString(reader["ES_ADMINISTRADOR"]);
+                    Resultado.COMENTARIO_INI_POR = Convert.ToInt32(reader["COMENTARIO_INI_X_EL_USUARIO"]);
+                    Resultado.NOMBRE_INICIA_POR = Convert.ToString(reader["NOMBRE_USUARIO_COMP"]);
+                    Resultado.CANTIDAD_COMENTARIO = Convert.ToInt32(reader["CANTIDAD_COMENTARIOS"]);
+                   
+                    oListado.Add(Resultado);
+                }
+                reader.Close();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return oListado;
+        }
+
+        public static string Archivar_Conversacion(int IdUsuario, int IdEquipoRecurso)
+        {
+            string result = "";
+            int intId = 0;
+
+            try
+            {
+                string strProcedure = "PA_CAMBIA_ESTADO_CONVERSACION ";
+                string strLastProcedure = "";
+                strLastProcedure = IdUsuario + "," + IdEquipoRecurso;
+                intId = Convert.ToInt32(FuncionesDB.ExecScalar(strProcedure + strLastProcedure));
+
+
+
+            }
+            catch (Exception ex)
+            {
+                intId = -1;
+
+            }
+            if (intId >= 0)
+            {
+                result = "OK";
+            }
+            else
+            {
+                result = "ERROR";
+            }
+
+            return result;
+        }
+        
 
     }
 

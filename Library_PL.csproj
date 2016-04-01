@@ -95,6 +95,7 @@
     <Compile Include="Entidad\InfoEquipoRecurso.cs" />
     <Compile Include="Entidad\InfoEquipoRecursoComentario.cs" />
     <Compile Include="Entidad\InfoEquipoRecursoCompartido.cs" />
+    <Compile Include="Entidad\InfoEquipoRecursoProposito.cs" />
     <Compile Include="Entidad\InfoEquipoUsuario.cs" />
     <Compile Include="Entidad\InfoEstadoCivil.cs" />
     <Compile Include="Entidad\InfoEtiqueta.cs" />
